@@ -131,14 +131,16 @@
                 <div class="oppia-dashboard-language-container-label">Translate to</div>
                 <translation-language-selector class="oppia-language-selector"
                                                [activeLanguageCode]="languageCode"
-                                               (setActiveLanguageCode)="onChangeLanguage($event)">
+                                               (setActiveLanguageCode)="onChangeLanguage($event)"
+                                               tabindex="0">
                 </translation-language-selector>
               </div>
               <div class="oppia-dashboard-topic-container" *ngIf="showTopicSelector()">
                 <div class="oppia-dashboard-topic-container-label">Subject</div>
                 <translation-topic-selector class="oppia-topic-selector"
                                             [activeTopicName]="topicName"
-                                            (setActiveTopicName)="onChangeTopic($event)">
+                                            (setActiveTopicName)="onChangeTopic($event)"
+                                            tabindex="0">
                 </translation-topic-selector>
               </div>
             </div>
